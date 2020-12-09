@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 240, 230);
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Poppins";
+  line-height: 1;
+
+}
+
+p {
+  font-family: "Quicksand";
+  font-size: 2rem;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 7rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav > a {
+  font-size: 2rem;
+}
+
+#header {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  z-index: 30;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(255, 240, 230);
+  align-items: center;
+  height: 15vh;
+  padding: 2%;
+}
+
+.appear {
+  visibility: visible;
+}
+
+.disappear {
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+header > a {
+  color: rgb(0, 100, 194);
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+nav a {
+  color: rgb(170, 57, 4);
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  margin: 0.5rem 1rem;
+}
+
+nav, header a:hover {
+  color: rgb(253, 101, 0);
+  font-size: 2.2rem;
+  z-index: 5;
+}
+
+.banner {
+  background-image: url("../imgs/solen-feyissa-XS4aAmpJbfc-unsplash.jpg");
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 5%;
+
+
+}
+
+.heading h1 {
+  color: rgb(255, 255, 255);
+  padding: 1% 2%;
+}
+
+
+
+.button {
+  margin: 1% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 15%;
+
+}
+
+.button a {
+  padding: 2% 6%;
+  margin: 2% 5%;
+  min-width: 15rem;
+  text-align: center;
+  border: 0px;
+  border-radius: 50px;
+  font-family: "Poppins";
+  background-color: rgba(53, 192, 216, 0);
+  border: 2px solid white;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+.button a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 0px;
+}
+
+
+.introduction {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  align-items: flex-start;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.about-heading {
+  width: 20%;
+  padding: 11.75% 2%;
+  margin: 0 1%;
+  text-align: right;
+  background-color: rgb(255, 117, 62);
+  z-index: 2;
+
+}
+.about-heading h2 {
+  color: #ffffff;
+}
+
+
+.about-me {
+  width: 60%;
+  padding: 5% 10%;
+  padding-bottom: 5%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-right: 5%;
+}
+
+
+.about-me img {
+  height: 12rem;
+  border-radius: 100%;
+  align-self: center;
+  margin-bottom: 1%;
+}
+
+.about-me h4 {
+  color: rgb(235, 90, 65);
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.about-me a {
+  color: rgb(255, 217, 0);
+}
+
+.break {
+  height: 15vh;
+}
+
+
+.portfolio {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  justify-content: flex-end;
+}
+
+.portfolio-heading {
+  position: absolute;
+  width: 40%;
+  max-width: 40vw;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.portfolio-heading h2 {
+  position: absolute;
+  padding: 2% 4%;
+  z-index: 10;
+  margin-top: 15%;
+  margin-left: 60%;
+  max-width: 100vw;
+  color: rgb(0, 54, 104);
+  text-align: right;
+}
+
+.portfolio-link {
+  background-color: rgb(255, 124, 72);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 35%;
+  min-width: 300px;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
+  padding-right: 2rem;
+  margin-left: 50%;
+  text-align: right;
+
+}
+
+.portfolio-link a {
+  margin: 1% 2%;
+  padding: 2%; 
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: right;
+}
+
+.portfolio-link a:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: row wrap;
+  align-items: space-around;
+  margin-top: 15vh;
+  padding: 0% 3%;
+}
+
+.contact-heading {
+  width: 50%;
+  padding: 2%;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-heading h2 {
+  padding: 10% 0;
+  width: 100%;
+  color: rgb(0, 54, 104);
+  line-height: 1.5;
+
+}
+
+.form {
+  width: 40%;
+  font-family: "Poppins";
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+textarea {
+  color: rgb(255, 255, 255);
+  resize: vertical;
+}
+
+form {
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  padding: 0 3%;
+  padding-top: 5%
+}
+
+input, textarea {
+  width: 90%;
+  border: 0px;
+  padding: 0.2rem 0.5rem;
+  font-family: "Poppins";
+  margin: 0 5%;
+  margin-bottom: 10%;
+  min-width: 0%;
+
+}
+
+input {
+  border-bottom: 2px white solid;
+  min-width: auto;
+}
+
+form, input {
+  background-color:rgb(245, 112, 35);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 4% 10%;
+  width: 30rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 3px white solid;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  margin: 0 5%;
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(0, 54, 104);
+  color: #fff;
+  border: 0px;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2% 2%;
+  background-color: rgb(31, 118, 189);
+  color: rgb(0, 33, 65);
+  justify-content: center;
+  align-items: left;
+  height: 15vh;
+
+}
+
+.footer a {
+  font-size: 1.3rem;
+  margin: 1% 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.footer a:hover {
+  color: rgb(253, 214, 214);
+}
+
+/*--responsive design */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+ 
+  h1 {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  
+  header {
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+      height: 20vh;
+  }
+  
+  
+    header > a {
+      font-size: 2.5rem;
+      margin: 0.5rem
+    }
+  
+
+    nav {
+      margin: 0% 5%;
+      flex-flow: column;
+    }
+    
+    nav > a {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 0.5rem;
+    }
+
+      .heading {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        padding-top: 8rem;
+      }
+    
+    .heading > h4 {
+      font-size: 10rem;
+      width: 60%;
+      margin: 0 auto;
+    }
+    
+      h1.heading2 {
+        margin-top: 100px;
+        margin-bottom: 80px;
+      }
+    
+      .introduction {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      } 
+
+      .about-heading {
+        width: 60%;
+      }
+  
+      .about-me {
+        margin-right: 0%;
+        width: 80%;
+        text-align: center;
+      }
+    
+      .portfolio { 
+        height: 70vh;
+        flex-direction: column;
+      }
+
+      .portfolio-heading h2 {
+        margin-left: 0%;
+
+      }
+
+
+      .portfolio-link {
+        padding-top: 20rem;
+        padding-right: 2rem;
+        width: 80%;
+        margin-left: 0%;
+      }
+    
+    .contact {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form {
+      height: 100vh;
+      width: 80%;
+    }
+
+
+    textarea {
+      max-height: 10rem;
+      overflow: scroll;
+    }
+    
+    .break {
+      height: 10vh;
+    }
+  
+
+    .footer {
+      align-items: center;
+    }
+  
+    .footer a {
+      font-size: 2rem;
+    }
+    
+  
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 960px) {
+
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #header {
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+.form {
+  width: 70%;
+}
+
+  header > a {
+    font-size: 2.5rem;
+    margin: 0% 5%;
+  }
+
+  nav {
+    margin: 0% 5%;
+  }
+  
+  nav > a {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+    .heading {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+  
+  .heading > h4 {
+    font-size: 10rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+    h1.heading {
+      margin-top: 200px;
+      margin-bottom: 80px;
+    }
+  
+    .introduction {
+      flex-direction: row;
+      justify-content: center;
+    } 
+
+    .about-me {
+      margin-right: 0%;
+    }
+  
+    .portfolio-heading {
+      position: absolute;
+      width: 40%;
+      max-width: 40vw;
+      margin-left: 10%;
+      margin-top: 5%;
+      z-index: 100;
+    }
+    
+    .portfolio-heading h2 {
+      position: static;
+      padding: 2% 4%;
+      margin-left: 10%;
+      max-width: 100vw;
+    }
+    
+    .portfolio-link {
+      width: 60%;
+      min-width: 30vw;
+      padding-top: 25rem;
+      padding-bottom: 10rem;
+      padding-right: 2rem;
+      margin-left: 20%;
+      text-align: right;
+
+    
+    }
+    
+    .portfolio-link a {
+      margin: 1% 2%;
+      padding: 2%; 
+      color: rgb(0, 0, 0);
+      font-size: 2rem;
+      text-decoration: none;
+      text-align: right;
+    }
+    
+    .portfolio-link a:hover {
+      color: rgb(255, 255, 255);
+    }
+    
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  textarea {
+    max-height: 20rem;
+    overflow: scroll;
+  }
+
+  button {
+    padding: 2%;
+    width: 20rem;
+    margin: 0 1%;
+    text-align: center;
+  }
+
+  .button {
+    width: 60%;
+  }
+
+  .break {
+    height: 10vh;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer a {
+    font-size: 2rem;
+  }
+
+}

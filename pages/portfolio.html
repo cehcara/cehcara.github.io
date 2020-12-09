@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- import the webpage's javascript file -->
+    <script>
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").className="appear";
+  } else {
+    document.getElementById("header").className="disappear";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+  </head>
+  
+
+
+
+  <body> 
+    <div class="wrapper">
+      <section class="portfolio-banner">
+       <div id="header">
+       <header>
+        <a class="home" href="../index.html">Home</a>
+        <nav>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/contact.html">Contact</a>
+          </ul>   
+          </nav> 
+        </header>
+      </div> 
+
+     <div class="break">
+     </div>
+     
+     <div id="portfolio" class="portfolio">
+       <div class="portfolio-heading">
+        <h2>Recent Portfolio</h2>
+       </div> 
+       <div class="portfolio-link">
+        <a href="../pages/cssexercise.html" target="_blank"> CSS Exercise</a>
+       </div>
+      </div>
+
+    <div class="break">
+    </div>
+
+    <div class="footer">
+        <h6>
+          Get in touch!
+        </h6>
+        <a href="mailto:m.bluth@example.com">carachiangeh@gmail.com</a>
+    </div>
+   </div> 
+  </body>
+</html>
